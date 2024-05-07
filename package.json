@@ -10,7 +10,8 @@
     "preview": "vite preview",
     "prepare": "husky",
     "pre-commit": "lint-staged",
-    "format": "npx dprint fmt"
+    "format": "npx dprint fmt",
+    "test": "vitest"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
@@ -24,18 +25,22 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.2.0",
+    "@testing-library/jest-dom": "^6.4.5",
+    "@testing-library/react": "^15.0.7",
     "@types/react": "^18.3.1",
     "@types/react-dom": "^18.3.0",
     "@typescript-eslint/eslint-plugin": "^7.8.0",
     "@typescript-eslint/parser": "^7.8.0",
     "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.19",
+    "dprint": "^0.45.1",
     "eslint": "^8.57.0",
     "eslint-plugin-react": "^7.34.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.6",
     "globals": "^15.1.0",
     "husky": "^9.0.11",
+    "jsdom": "^24.0.0",
     "lint-staged": "^15.2.2",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.3",
@@ -43,6 +48,6 @@
     "typescript-eslint": "^7.8.0",
     "vite": "^5.2.0",
     "vite-tsconfig-paths": "^4.3.2",
-    "dprint": "^0.45.1"
+    "vitest": "^1.6.0"
   }
 }
